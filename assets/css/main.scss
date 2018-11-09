@@ -3,6 +3,9 @@
 
 @import 'foundation-sites/foundation';
 
+@import 'header';
+@import 'home';
+
 @include foundation-global-styles;
 
 // @include foundation-grid;
