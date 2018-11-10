@@ -1,32 +1,34 @@
 {%- assign default_paths = site.pages | map: "path" -%}
 {%- assign page_paths = site.header_pages | default: default_paths -%}
 <div class="title-bar" data-responsive-toggle="gabrieltanchen-menu" data-hide-for="medium">
+  <button class="nav-menu-icon float-left" type="button" data-toggle="gabrieltanchen-menu">
+    <i class="fas fa-bars"></i>
+  </button>
   <div class="title-bar-title nav-menu-logo float-center">{{ site.title | escape }}</div>
-  <button class="menu-icon nav-menu-icon float-right" type="button" data-toggle="gabrieltanchen-menu"></button>
 </div>
 
-<div class="top-bar nav-menu" id="gabrieltanchen-menu">
-  <div class="top-bar-left hide-for-small-only">
-    <ul class="menu">
-      <li>
-        <a class="nav-menu-logo title" rel="author" href="{{ "/" | relative_url }}">
-          {{ site.title | escape }}
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="vertical medium-horizontal menu" data-dropdown-menu>
-      {%- for path in page_paths -%}
-        {%- assign nav_page = site.pages | where: "path", path | first -%}
-        {%- if nav_page.title -%}
-          <li>
-            <a class="nav-menu-link" href="{{ nav_page.url | relative_url }}">
-              {{ nav_page.title | escape }}
-            </a>
-          </li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
+<div class="grid-container">
+  <div class="top-bar nav-menu" id="gabrieltanchen-menu">
+    <div class="top-bar-left">
+      <ul class="vertical medium-horizontal menu" data-dropdown-menu>
+        <li class="hide-for-small-only">
+          <a class="nav-menu-logo nav-menu-logo-large" rel="author" href="{{ "/" | relative_url }}">
+            {{ site.title | escape }}
+          </a>
+        </li>
+        {%- for path in page_paths -%}
+          {%- assign nav_page = site.pages | where: "path", path | first -%}
+          {%- if nav_page.title -%}
+            <li>
+              <a class="nav-menu-link" href="{{ nav_page.url | relative_url }}">
+                {{ nav_page.title | escape }}
+              </a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="top-bar-right">
+    </div>
   </div>
 </div>
