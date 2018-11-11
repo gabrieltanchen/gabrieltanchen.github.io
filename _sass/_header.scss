@@ -1,27 +1,39 @@
 .nav-menu-icon {
-  color: $black;
+  color: $white;
   font-size: 20px;
 }
 
 .nav-menu-logo {
-  color: $black;
-  font-family: 'ratio', sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
+  color: $white;
+  font-family: 'ratio', sans-serif !important;
+  font-size: 20px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
 
   &:hover {
-    color: $gt-hover-color;
+    color: $gt-hover-secondary-color;
   }
 
   &.nav-menu-logo-large {
     font-size: 24px;
     padding-left: 0;
   }
+
+  &.nav-menu-logo-drawer {
+    color: $black;
+  }
+}
+
+.nav-menu-container {
+  background-color: $gt-primary-color;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .nav-menu {
+  padding-bottom: 0 !important;
   padding-left: 0 !important;
+  padding-top: 0 !important;
 
   @media screen and (max-width: 39.9375em) {
     background-color: $white !important;
@@ -33,11 +45,13 @@
     line-height: 1.5;
 
     @media screen and (min-width: 40em) {
+      color: $white;
       font-size: 18px;
     }
 
     &:hover {
-      color: $gt-hover-color;
+      background-color: $gt-secondary-color;
+      color: $gt-hover-secondary-color;
     }
 
     &.nav-menu-link-small {

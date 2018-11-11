@@ -6,25 +6,27 @@
   </button>
   <div class="title-bar-title nav-menu-logo float-center">{{ page.title | escape }}</div>
 </div>
-<div class="grid-container show-for-medium">
-  <div class="top-bar nav-menu">
-    <div class="top-bar-left">
-      <ul class="vertical medium-horizontal menu">
-        <li>
-          <a class="nav-menu-logo nav-menu-logo-large" rel="author" href="{{ "/" | relative_url }}">
-            {{ site.title | escape }}
-          </a>
-        </li>
-        {%- for menu_item in site.data.nav_menu -%}
+<div class="nav-menu-container">
+  <div class="grid-container show-for-medium">
+    <div class="top-bar nav-menu">
+      <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu">
           <li>
-            <a class="nav-menu-link" href="{{ menu_item.link }}">
-              {{ menu_item.name }}
+            <a class="nav-menu-logo nav-menu-logo-large" rel="author" href="{{ "/" | relative_url }}">
+              {{ site.title | escape }}
             </a>
           </li>
-        {% endfor -%}
-      </ul>
-    </div>
-    <div class="top-bar-right">
+          {%- for menu_item in site.data.nav_menu -%}
+            <li>
+              <a class="nav-menu-link" href="{{ menu_item.link }}">
+                {{ menu_item.name }}
+              </a>
+            </li>
+          {% endfor -%}
+        </ul>
+      </div>
+      <div class="top-bar-right">
+      </div>
     </div>
   </div>
 </div>
@@ -34,7 +36,7 @@
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell nav-drawer-header">
-        <a class="nav-menu-logo" rel="author" href="{{ "/" | relative_url }}">
+        <a class="nav-menu-logo nav-menu-logo-drawer" rel="author" href="{{ "/" | relative_url }}">
           {{ site.title | escape }}
         </a>
       </div>
