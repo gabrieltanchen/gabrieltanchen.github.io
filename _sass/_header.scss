@@ -16,10 +16,13 @@
 
   &.nav-menu-logo-large {
     font-size: 24px;
+    padding-left: 0;
   }
 }
 
 .nav-menu {
+  padding-left: 0 !important;
+
   @media screen and (max-width: 39.9375em) {
     background-color: $white !important;
   }

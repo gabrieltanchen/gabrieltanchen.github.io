@@ -1,6 +1,77 @@
+@keyframes homeTitle1FadeIn {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes homeTitle2FadeIn {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  66% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes homeTitle3FadeIn {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  80% {
+    opacity: 0;
+    top: 10px;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 .hero-image {
   background-position: center bottom;
   background-size: cover;
   height: 100vh;
   width: 100%;
+
+  .home-title {
+    padding-top: 60px;
+  }
+
+  .home-title-1 {
+    animation-duration: 500ms;
+    animation-name: homeTitle1FadeIn;
+    animation-timing-function: ease-in;
+    position: relative;
+  }
+
+  .home-title-2 {
+    animation-duration: 1500ms;
+    animation-name: homeTitle2FadeIn;
+    animation-timing-function: ease-in;
+    position: relative;
+  }
+
+  .home-title-3 {
+    animation-duration: 2500ms;
+    animation-name: homeTitle3FadeIn;
+    animation-timing-function: ease-in;
+    position: relative;
+  }
 }
