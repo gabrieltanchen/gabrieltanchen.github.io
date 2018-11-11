@@ -10,6 +10,10 @@
   font-style: normal;
   font-weight: 700;
 
+  &:hover {
+    color: $gt-hover-color;
+  }
+
   &.nav-menu-logo-large {
     font-size: 24px;
   }
@@ -27,6 +31,10 @@
 
     @media screen and (min-width: 40em) {
       font-size: 18px;
+    }
+
+    &:hover {
+      color: $gt-hover-color;
     }
 
     &.nav-menu-link-small {
