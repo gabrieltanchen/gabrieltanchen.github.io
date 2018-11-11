@@ -31,4 +31,26 @@
 <div class="nav-drawer-container">
 </div>
 <div class="nav-drawer">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell nav-drawer-header">
+        <a class="nav-menu-logo" rel="author" href="{{ "/" | relative_url }}">
+          {{ site.title | escape }}
+        </a>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <ul class="vertical menu nav-menu">
+          {%- for menu_item in site.data.nav_menu -%}
+            <li>
+              <a class="nav-menu-link nav-menu-link-small" href="{{ menu_item.link }}">
+                {{ menu_item.name }}
+              </a>
+            </li>
+          {% endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
