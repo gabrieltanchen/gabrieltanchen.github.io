@@ -11,7 +11,15 @@ p {
 .page-container {
   padding-top: 10px;
 
-   @media screen and (min-width: 40em) {
-     padding-top: 80px;
-   }
+  @media screen and (min-width: 40em) {
+    padding-top: 80px;
+  }
+
+  p {
+    font-size: 16px;
+
+    @media screen and (min-width: 40em) {
+      font-size: 18px;
+    }
+  }
 }

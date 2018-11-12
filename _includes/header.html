@@ -4,7 +4,13 @@
   <button class="nav-menu-icon float-left" type="button">
     <i class="fas fa-bars"></i>
   </button>
-  <div class="title-bar-title nav-menu-logo float-center">{{ page.title | escape }}</div>
+  <div class="title-bar-title nav-menu-logo float-center">
+    {% if page.title %}
+      {{ page.title | escape }}
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+  </div>
 </div>
 <div class="nav-menu-container">
   <div class="grid-container show-for-medium">
