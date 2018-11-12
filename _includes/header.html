@@ -1,0 +1,58 @@
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<div class="title-bar show-for-small-only">
+  <button class="nav-menu-icon float-left" type="button">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="title-bar-title nav-menu-logo float-center">{{ page.title | escape }}</div>
+</div>
+<div class="nav-menu-container">
+  <div class="grid-container show-for-medium">
+    <div class="top-bar nav-menu">
+      <div class="top-bar-left">
+        <ul class="vertical medium-horizontal menu">
+          <li>
+            <a class="nav-menu-logo nav-menu-logo-large" rel="author" href="{{ "/" | relative_url }}">
+              {{ site.title | escape }}
+            </a>
+          </li>
+          {%- for menu_item in site.data.nav_menu -%}
+            <li>
+              <a class="nav-menu-link" href="{{ menu_item.link }}">
+                {{ menu_item.name }}
+              </a>
+            </li>
+          {% endfor -%}
+        </ul>
+      </div>
+      <div class="top-bar-right">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nav-drawer-container">
+</div>
+<div class="nav-drawer">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell nav-drawer-header">
+        <a class="nav-menu-logo nav-menu-logo-drawer" rel="author" href="{{ "/" | relative_url }}">
+          {{ site.title | escape }}
+        </a>
+      </div>
+    </div>
+    <div class="grid-x">
+      <div class="cell">
+        <ul class="vertical menu nav-menu">
+          {%- for menu_item in site.data.nav_menu -%}
+            <li>
+              <a class="nav-menu-link nav-menu-link-small" href="{{ menu_item.link }}">
+                {{ menu_item.name }}
+              </a>
+            </li>
+          {% endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

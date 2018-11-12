@@ -4,7 +4,13 @@
   {%- include head.html -%}
 
   <body>
-    hello
+    {%- include header.html -%}
+
+    {{ content }}
+
+    <script src="{{ "/assets/js/foundation-sites/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/foundation-sites/foundation.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/app.js" | relative_url}}"></script>
   </body>
 
 </html>
