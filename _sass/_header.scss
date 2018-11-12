@@ -63,6 +63,14 @@
     }
   }
 
+  .social-link {
+    color: $white;
+    font-size: 20px;
+
+    &:hover {
+      color: $gt-hover-secondary-color;
+    }
+  }
 }
 
 .nav-drawer-container {
