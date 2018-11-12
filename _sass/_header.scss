@@ -47,10 +47,13 @@
     @media screen and (min-width: 40em) {
       color: $white;
       font-size: 18px;
+
+      &:hover {
+        background-color: $gt-secondary-color;
+      }
     }
 
     &:hover {
-      background-color: $gt-secondary-color;
       color: $gt-hover-secondary-color;
     }
 
