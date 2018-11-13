@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![Gabriel Tan-Chen](/assets/images/about/gabriel.jpg){: .profile-photo }
+
 Hi! My name is Gabriel Tan-Chen. I am a software developer at the Centre for International Governance Innovation.
 
 Growing up in Oakville, Ontario, I was blessed to have the opportunity to attend King's Christian Collegiate. There I discovered my affinity for math, and afterwards decided to pursue a degree in International Economics & Finance. After a few semesters, I realized I did not find the same level of passion in economics, and after some soul searching I landed in the computer science program at the University of Toronto.
