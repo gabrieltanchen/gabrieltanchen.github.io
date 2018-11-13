@@ -67,11 +67,19 @@
   }
 
   .social-link {
-    color: $white;
-    font-size: 20px;
+    a {
+      color: $white;
+      font-size: 20px;
 
-    &:hover {
-      color: $gt-hover-secondary-color;
+      &:hover {
+        color: $gt-hover-secondary-color;
+      }
+    }
+
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
     }
   }
 }
