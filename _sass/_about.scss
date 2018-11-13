@@ -12,3 +12,11 @@
     border-radius: 50%;
   }
 }
+
+.triathlon-photo {
+  max-height: 400px;
+
+  @media screen and (min-width: 40em) {
+    float: right;
+  }
+}
