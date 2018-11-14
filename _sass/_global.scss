@@ -7,3 +7,19 @@ p {
   font-style: normal;
   font-weight: 300;
 }
+
+.page-container {
+  padding-top: 10px;
+
+  @media screen and (min-width: 40em) {
+    padding-top: 80px;
+  }
+
+  p {
+    font-size: 16px;
+
+    @media screen and (min-width: 40em) {
+      font-size: 18px;
+    }
+  }
+}

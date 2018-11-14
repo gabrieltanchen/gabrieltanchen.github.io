@@ -4,13 +4,19 @@
   <button class="nav-menu-icon float-left" type="button">
     <i class="fas fa-bars"></i>
   </button>
-  <div class="title-bar-title nav-menu-logo float-center">{{ page.title | escape }}</div>
+  <div class="title-bar-title nav-menu-logo float-center">
+    {% if page.title %}
+      {{ page.title | escape }}
+    {% else %}
+      {{ site.title | escape }}
+    {% endif %}
+  </div>
 </div>
 <div class="nav-menu-container">
   <div class="grid-container show-for-medium">
     <div class="top-bar nav-menu">
       <div class="top-bar-left">
-        <ul class="vertical medium-horizontal menu">
+        <ul class="menu">
           <li>
             <a class="nav-menu-logo nav-menu-logo-large" rel="author" href="{{ "/" | relative_url }}">
               {{ site.title | escape }}
@@ -26,6 +32,23 @@
         </ul>
       </div>
       <div class="top-bar-right">
+        <ul class="menu">
+          <li class="social-link">
+            <a href="https://github.com/gabrieltanchen" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="https://twitter.com/gabrieltanchen" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="social-link">
+            <a href="https://www.linkedin.com/in/gabriel-tan-chen-28056688/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
