@@ -1,4 +1,10 @@
 .post-container {
   margin: 0 auto;
   max-width: 560px !important;
+  padding-top: 30px;
+
+  .post-date {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
 }
