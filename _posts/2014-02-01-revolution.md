@@ -2,6 +2,7 @@
 layout: post
 title:  "Revolution"
 ---
+
 What does it mean to be a computer scientist? I've been struggling with this question for a while now, in the attempt to figure out what I want from my life. It's far too easy to fall back on the belief that money is all that is needed to be successful. I believe it's much harder to build something truly marvellous, but this might stem from my perhaps naive childhood dream of changing the world.
 
 The news can be distracting. I find myself speechless at Facebook's ever increasing valuations, its $1,000,000,000 acquisition of Instagram, and the price pop during Twitter's IPO. The question though, are these social networks the answer to the aforementioned "truly marvellous", or do they exist purely to capitalize on society's interminable vanity? I'm inclined to consider the latter, since the content, at least to the shareholder's eyes, seem to be merely filler to place next to a constant stream of advertisements.

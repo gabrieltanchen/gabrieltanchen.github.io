@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Gabriel Tan-Chen](/assets/images/about/gabriel.jpg){: .profile-photo }
+<figure>![Gabriel Tan-Chen](/assets/images/about/gabriel.jpg){: .profile-photo }</figure>
 
 Hi! My name is Gabriel Tan-Chen. I am a software developer at the Centre for International Governance Innovation.
 
