@@ -59,4 +59,32 @@
       transition: color 250ms;
     }
   }
+
+  .pagination-container {
+    margin-bottom: 30px;
+
+    .next-page {
+      text-align: right;
+    }
+
+    .page-number {
+      text-align: center;
+    }
+
+    .previous-page {
+      text-align: left;
+    }
+
+    .next-page,
+    .previous-page {
+      a {
+        color: $gt-secondary-color;
+        font-weight: 500 !important;
+
+        &:hover {
+          color: $gt-hover-secondary-color;
+        }
+      }
+    }
+  }
 }

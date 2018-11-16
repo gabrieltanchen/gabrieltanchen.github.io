@@ -31,4 +31,27 @@ pagination:
       <br>
     {%- endfor -%}
   </div>
+  <div class="grid-x grid-padding-x pagination-container">
+    <div class="cell small-4 previous-page">
+      {%- if paginator.previous_page_path -%}
+        <a href="{{paginator.previous_page_path}}">
+          <i class="fas fa-chevron-left"></i>
+          Previous
+        </a>
+      {%- endif -%}
+    </div>
+    <div class="cell small-4">
+      <p class="page-number">
+        {{ paginator.page }}
+      </p>
+    </div>
+    <div class="cell small-4 next-page">
+      {%- if paginator.next_page_path -%}
+        <a href="{{paginator.next_page_path}}">
+          Next
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
 </div>
