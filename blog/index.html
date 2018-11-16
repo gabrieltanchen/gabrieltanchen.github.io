@@ -3,11 +3,32 @@ layout: default
 pagination:
   enabled: true
 ---
-<div class="grid-container page-container">
-  {%- for post in paginator.posts -%}
-    <br>
-    <a href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-    </a>
-  {%- endfor -%}
+<div class="grid-container page-container blog-container">
+  <div class="grid-x grid-padding-x">
+    {%- for post in paginator.posts -%}
+      <div class="cell small-12 medium-6 large-4">
+        <a class="blog-post" href="{{ post.url | relative_url }}">
+          <div class="grid-x">
+            <div class="cell">
+              {% assign post_image_src = '/assets/images/blog' | append: post.id | append: '/main-image.jpg' %}
+              <div class="blog-post-image-container">
+                <div class="blog-post-image" style="background-image: url('{{ post_image_src }}');"></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-x">
+            <div class="cell blog-post-date">
+              {{ post.date | date: "%-d %B %Y" }}
+            </div>
+          </div>
+          <div class="grid-x">
+            <div class="cell blog-post-title">
+              {{ post.title | escape }}
+            </div>
+          </div>
+        </a>
+      </div>
+      <br>
+    {%- endfor -%}
+  </div>
 </div>
