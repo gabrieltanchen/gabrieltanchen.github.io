@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="grid-container page-container">
   <div class="grid-x">
-    <div class="cell">
+    <div class="cell post-main-image">
       {% assign main_image_src = '/assets/images/blog' | append: page.id | append: '/main-image.jpg' %}
       <img src="{{ main_image_src | relative_url }}">
     </div>
@@ -12,12 +12,16 @@ layout: default
     <div class="cell post-container">
       <div class="grid-x">
         <div class="cell">
-          <h2 class="post-date">{{ page.date | date: "%-d %B %Y" }}</h2>
+          <h2 class="post-date">
+            {{ page.date | date: "%-d %B %Y" }}
+          </h2>
         </div>
       </div>
       <div class="grid-x">
         <div class="cell">
-          <h1>{{ page.title | escape }}</h1>
+          <h1>
+            {{ page.title | escape }}
+          </h1>
         </div>
       </div>
       <div class="grid-x">

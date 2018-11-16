@@ -1,11 +1,40 @@
+.post-main-image {
+  text-align: center;
+
+  img {
+    @media screen and (min-width: 40em) {
+      max-height: calc(100vh - 80px);
+    }
+  }
+}
+
 .post-container {
   padding-top: 30px;
 
   h1,
   h2,
-  p {
+  p,
+  .photo-info {
     margin: 0 auto 16px auto;
     max-width: 560px !important;
+  }
+
+  .photo-info {
+    tbody {
+      border: 0;
+
+      tr {
+        background-color: transparent;
+
+        td {
+          padding: 0;
+
+          &.info-label {
+            font-weight: 600 !important;
+          }
+        }
+      }
+    }
   }
 
   .post-date {
