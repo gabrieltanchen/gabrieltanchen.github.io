@@ -18,6 +18,11 @@ pagination:
           </div>
           <div class="grid-x">
             <div class="cell blog-post-date">
+              {%- if post.layout == "post" -%}
+                <i class="fas fa-edit"></i>
+              {%- elsif post.layout == "photograph" -%}
+                <i class="fas fa-camera-retro"></i>
+              {%- endif -%}
               {{ post.date | date: "%-d %B %Y" }}
             </div>
           </div>
