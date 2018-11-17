@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Hello, World!"
+title_image: "v1542483405/gabrieltanchen/blog/2014-01-01-hello-world/main-image.jpg"
 ---
 
 Welcome to a new year, a fresh start, and this blog. My name is Gabriel, though many call me Gabe, and my very life seems to be a paradox. I am a computer science student excited about the possibilities of the future, yet find that technology often than not feels cold and distant. I'm a photographer that still shoots film, such as the image above. Why, you ask? Digital photography lacks the intimacy and excitement of, for example, poring over recently developed negatives.
