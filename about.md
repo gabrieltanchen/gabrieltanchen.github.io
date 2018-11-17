@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Gabriel Tan-Chen](/assets/images/about/gabriel.jpg){: .profile-photo }
+![Gabriel Tan-Chen](https://res.cloudinary.com/dsolq4qmw/image/upload/v1542481449/gabrieltanchen/about/gabriel.jpg){: .profile-photo }
 
 Hi! My name is Gabriel Tan-Chen. I am a software developer at the Centre for International Governance Innovation.
 
