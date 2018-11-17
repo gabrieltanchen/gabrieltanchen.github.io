@@ -2,10 +2,17 @@ a,
 h2,
 h3,
 h4,
-p {
+p,
+td {
   font-family: 'proxima-nova', sans-serif !important;
-  font-style: normal;
-  font-weight: 300;
+  font-style: normal !important;
+  font-weight: 300 !important;
+}
+
+h1 {
+  font-family: 'ratio', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
 }
 
 .page-container {

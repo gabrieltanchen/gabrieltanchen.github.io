@@ -1,0 +1,125 @@
+---
+layout: default
+---
+<div class="grid-container page-container">
+  <div class="grid-x">
+    <div class="cell post-main-image">
+      {% assign main_image_src = '/assets/images/blog/' | append: page.id | append: '/main-image.jpg' %}
+      <img src="{{ main_image_src | relative_url }}">
+    </div>
+  </div>
+  <div class="grid-x">
+    <div class="cell post-container">
+      <div class="grid-x">
+        <div class="cell">
+          <h2 class="post-date">
+            {{ page.date | date: "%-d %B %Y" }}
+          </h2>
+        </div>
+      </div>
+      <div class="grid-x">
+        <div class="cell">
+          <h1>
+            {{ page.title | escape }}
+          </h1>
+        </div>
+      </div>
+      <div class="grid-x">
+        <div class="cell">
+          <table class="photo-info">
+            {%- if page.location -%}
+              <tr>
+                <td class="info-label">
+                  Location:
+                </td>
+                <td>
+                  {{ page.location }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.camera -%}
+              <tr>
+                <td class="info-label">
+                  Camera:
+                </td>
+                <td>
+                  {{ page.camera }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.lens -%}
+              <tr>
+                <td class="info-label">
+                  Lens:
+                </td>
+                <td>
+                  {{ page.lens }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.film -%}
+              <tr>
+                <td class="info-label">
+                  Film:
+                </td>
+                <td>
+                  {{ page.film }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.filter -%}
+              <tr>
+                <td class="info-label">
+                  Filter:
+                </td>
+                <td>
+                  {{ page.filter }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.focal_length -%}
+              <tr>
+                <td class="info-label">
+                  Focal Length:
+                </td>
+                <td>
+                  {{ page.focal_length }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.shutter -%}
+              <tr>
+                <td class="info-label">
+                  Shutter:
+                </td>
+                <td>
+                  {{ page.shutter }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.aperture -%}
+              <tr>
+                <td class="info-label">
+                  Aperture:
+                </td>
+                <td>
+                  {{ page.aperture }}
+                </td>
+              </tr>
+            {%- endif -%}
+            {%- if page.iso -%}
+              <tr>
+                <td class="info-label">
+                  ISO:
+                </td>
+                <td>
+                  {{ page.iso }}
+                </td>
+              </tr>
+            {%- endif -%}
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
