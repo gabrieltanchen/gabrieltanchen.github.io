@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Revolution"
+title_image: "v1542483312/gabrieltanchen/blog/2014-02-01-revolution/main-image.jpg"
 ---
 
 What does it mean to be a computer scientist? I've been struggling with this question for a while now, in the attempt to figure out what I want from my life. It's far too easy to fall back on the belief that money is all that is needed to be successful. I believe it's much harder to build something truly marvellous, but this might stem from my perhaps naive childhood dream of changing the world.
