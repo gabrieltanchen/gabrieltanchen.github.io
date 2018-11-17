@@ -1,6 +1,7 @@
 ---
 layout: photograph
 title: "Albion Falls"
+title_image: "v1542484333/gabrieltanchen/blog/2013-01-27-albion-falls/main-image.jpg"
 location: "Hamilton, Ontario"
 camera: "Nikon D7000"
 lens: "Nikon Nikkor 12-24mm f/4G ED-IF AF-S DX Zoom"

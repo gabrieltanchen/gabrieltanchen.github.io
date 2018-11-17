@@ -4,8 +4,8 @@ layout: default
 <div class="grid-container page-container">
   <div class="grid-x">
     <div class="cell post-main-image">
-      {% assign main_image_src = '/assets/images/blog/' | append: page.id | append: '/main-image.jpg' %}
-      <img src="{{ main_image_src | relative_url }}">
+      {% assign title_image_src = 'https://res.cloudinary.com/dsolq4qmw/image/upload/' | append: page.title_image %}
+      <img src="{{ title_image_src }}">
     </div>
   </div>
   <div class="grid-x">

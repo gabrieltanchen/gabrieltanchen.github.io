@@ -1,6 +1,7 @@
 ---
 layout: photograph
 title: "Bronte Creek"
+title_image: "v1542483804/gabrieltanchen/blog/2013-04-12-bronte-creek/main-image.jpg"
 location: "Bronte, Oakville, Ontario"
 camera: "Nikon F5"
 lens: "Nikon Nikkor 12-24mm f/4G ED-IF AF-S DX Zoom"

@@ -10,9 +10,10 @@ pagination:
         <a class="blog-post" href="{{ post.url | relative_url }}">
           <div class="grid-x">
             <div class="cell">
-              {% assign post_image_src = '/assets/images/blog' | append: post.id | append: '/main-image-thumbnail.jpg' %}
+              {% assign post_image_src = 'https://res.cloudinary.com/dsolq4qmw/image/upload/w_640,c_fill/' | append: post.title_image %}
+              {% assign post_blur_src = 'https://res.cloudinary.com/dsolq4qmw/image/upload/w_50,e_blur:100,c_fill/' | append: post.title_image %}
               <div class="blog-post-image-container">
-                <div class="blog-post-image" style="background-image: url('{{ post_image_src }}');"></div>
+                <div class="blog-post-image" style="background-image: url('{{ post_image_src }}'), url('{{ post_blur_src }}');"></div>
               </div>
             </div>
           </div>

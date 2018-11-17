@@ -1,6 +1,7 @@
 ---
 layout: photograph
 title: "Tews Falls"
+title_image: "v1542484902/gabrieltanchen/blog/2012-08-08-tews-falls/main-image.jpg"
 location: "Dundas, Ontario"
 camera: "Nikon D7000"
 lens: "Nikon Nikkor 12-24mm f/4G ED-IF AF-S DX Zoom"
