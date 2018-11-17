@@ -1,6 +1,7 @@
 ---
 layout: photograph
 title: "Burlington Bay"
+title_image: "v1542484259/gabrieltanchen/blog/2013-03-02-burlington-bay/main-image.jpg"
 location: "Burlington, Ontario"
 camera: "Nikon D7000"
 lens: "Nikon Nikkor 12-24mm f/4G ED-IF AF-S DX Zoom"
