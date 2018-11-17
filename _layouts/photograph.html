@@ -5,7 +5,8 @@ layout: default
   <div class="grid-x">
     <div class="cell post-main-image">
       {% assign title_image_src = 'https://res.cloudinary.com/dsolq4qmw/image/upload/' | append: page.title_image %}
-      <img src="{{ title_image_src }}">
+      {% assign title_blur_src = 'https://res.cloudinary.com/dsolq4qmw/image/upload/w_50,e_blur:100,c_fill/' | append: page.title_image %}
+      <img src="{{ title_image_src }}" style="background-image: url('{{ title_blur_src }}')">
     </div>
   </div>
   <div class="grid-x">
