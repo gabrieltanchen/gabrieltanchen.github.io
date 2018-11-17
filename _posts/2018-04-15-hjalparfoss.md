@@ -1,6 +1,7 @@
 ---
 layout: photograph
 title: "Hjálparfoss"
+title_image: "v1542482650/gabrieltanchen/blog/2018-04-15-hjalparfoss/main-image.jpg"
 location: "Iceland"
 camera: "Nikon D7000"
 lens: "Nikon Nikkor 12-24mm f/4G ED-IF AF-S DX Zoom"
