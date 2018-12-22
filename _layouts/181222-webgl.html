@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <!-- {%- include header.html -%} -->
+
+    <canvas id="webgl-canvas"></canvas>
+
+    <script src="{{ "/assets/js/foundation-sites/jquery.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/foundation-sites/foundation.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/app.js" | relative_url}}"></script>
+    <script id="3d-vertex-shader" type="x-shader/x-vertex">
+      attribute vec4 a_position;
+      attribute vec4 a_color;
+
+      uniform mat4 u_matrix;
+
+      varying vec4 v_color;
+
+      void main() {
+        gl_Position = u_matrix * a_position;
+        v_color = a_color;
+      }
+    </script>
+    <script id="3d-fragment-shader" type="x-shader/x-fragment">
+      precision mediump float;
+
+      varying vec4 v_color;
+
+      void main() {
+        gl_FragColor = v_color;
+      }
+    </script>
+    <script src="{{ "/assets/js/181222-webgl/ironman-70-3-muskoka.js" | relative_url}}"></script>
+  </body>
+
+</html>
