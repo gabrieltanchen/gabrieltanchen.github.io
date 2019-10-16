@@ -1,32 +1,72 @@
-a,
-h2,
-h3,
-h4,
-p,
-td {
-  font-family: 'proxima-nova', sans-serif !important;
-  font-style: normal !important;
-  font-weight: 300 !important;
+.parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+
+  .hero-image {
+    background-position: center bottom;
+    background-size: cover;
+    bottom: 0;
+    // height: 100vh;
+    left: -5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateZ(-1px) scale(2);
+    // width: 100%;
+
+    &:after {
+      background-color: rgba(0, 0, 0, 0.5);
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
 }
 
-h1 {
-  font-family: 'ratio', sans-serif !important;
-  font-style: normal !important;
-  font-weight: 700 !important;
-}
 
 .page-container {
-  padding-top: 10px;
+  position: relative;
+  z-index: 5;
+}
 
-  @media screen and (min-width: 40em) {
-    padding-top: 80px;
-  }
+.main-content {
+  background-color: $white;
+  // margin-top: 400px;
+  padding-top: 100px;
+  position: relative;
+  height: 500px;
 
-  p {
-    font-size: 16px;
+  // &:before {
+  //   background-image: linear-gradient(transparent, $black);;
+  //   bottom: 100%;
+  //   content: '';
+  //   display: block;
+  //   height: 400px;
+  //   left: 0;
+  //   position: absolute;
+  //   // top: 0;
+  //   width: 100%;
+  // }
 
-    @media screen and (min-width: 40em) {
+  .grid-container {
+    position: relative;
+    // top: -300px;
+
+    p {
+      color: $black;
+      font-family: 'proxima-nova', sans-serif !important;
       font-size: 18px;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      margin: 0 auto 16px auto;
+      max-width: 560px !important;
     }
   }
 }
