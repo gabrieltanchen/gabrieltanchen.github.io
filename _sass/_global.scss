@@ -1,3 +1,39 @@
+@keyframes title1FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title2FadeIn {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes title3FadeIn {
+  0% {
+    opacity: 0;
+    top: 10px;
+  }
+  75% {
+    opacity: 0;
+    top: 10px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
 .parallax-container {
   perspective: 1px;
   height: 100vh;
@@ -29,6 +65,7 @@
         font-size: 18px;
         font-style: normal !important;
         font-weight: 400 !important;
+        position: relative;
 
         @media screen and (min-width: 40em) {
           font-size: 24px;
@@ -42,11 +79,30 @@
         font-style: normal !important;
         font-weight: 700 !important;
         line-height: 1;
+        position: relative;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 
         @media screen and (min-width: 40em) {
           font-size: 64px;
         }
+      }
+
+      .title-1 {
+        animation-duration: 1000ms;
+        animation-name: title1FadeIn;
+        animation-timing-function: ease-in-out;
+      }
+
+      .title-2 {
+        animation-duration: 2500ms;
+        animation-name: title2FadeIn;
+        animation-timing-function: ease-in-out;
+      }
+
+      .title-3 {
+        animation-duration: 4000ms;
+        animation-name: title3FadeIn;
+        animation-timing-function: ease-in-out;
       }
     }
   }
