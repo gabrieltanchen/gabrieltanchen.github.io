@@ -168,15 +168,21 @@
       padding-top: 20px;
 
       .gallery-image {
-        height: 200px;
         overflow: hidden;
+        position: relative;
+
+        &:after {
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+        }
 
         button {
           background-position: center center;
           background-size: cover;
           cursor: pointer;
-          height: 200px;
-          position: relative;
+          height: 100%;
+          position: absolute;;
           transition: transform 500ms;
           width: 100%;
 
