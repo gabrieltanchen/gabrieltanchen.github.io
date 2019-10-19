@@ -6,17 +6,52 @@
   position: absolute;
   width: 100%;
 
+  .grid-container {
+    position: relative;
+    z-index: 5;
+
+    .home-title {
+      height: 100vh;
+      padding-top: 30%;
+      width: 100%;
+
+      span {
+        color: $white;
+        font-family: 'proxima-nova', sans-serif !important;
+        font-size: 18px;
+        font-style: normal !important;
+        font-weight: 400 !important;
+
+        @media screen and (min-width: 40em) {
+          font-size: 24px;
+        }
+      }
+
+      h1 {
+        color: $white;
+        font-family: 'ratio', sans-serif !important;
+        font-size: 48px;
+        font-style: normal !important;
+        font-weight: 700 !important;
+        line-height: 1;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+        @media screen and (min-width: 40em) {
+          font-size: 64px;
+        }
+      }
+    }
+  }
+
   .hero-image {
     background-position: center bottom;
     background-size: cover;
     bottom: 0;
-    // height: 100vh;
     left: -5px;
     position: absolute;
     right: 0;
     top: 0;
     transform: translateZ(-1px) scale(2);
-    // width: 100%;
 
     &:after {
       background-color: rgba(0, 0, 0, 0.5);
@@ -30,34 +65,14 @@
   }
 }
 
-
-.page-container {
-  position: relative;
-  z-index: 5;
-}
-
 .main-content {
   background-color: $white;
-  // margin-top: 400px;
-  padding-top: 100px;
+  padding-top: 60px;
   position: relative;
   height: 500px;
 
-  // &:before {
-  //   background-image: linear-gradient(transparent, $black);;
-  //   bottom: 100%;
-  //   content: '';
-  //   display: block;
-  //   height: 400px;
-  //   left: 0;
-  //   position: absolute;
-  //   // top: 0;
-  //   width: 100%;
-  // }
-
   .grid-container {
     position: relative;
-    // top: -300px;
 
     p {
       color: $black;
@@ -67,6 +82,17 @@
       font-weight: 400 !important;
       margin: 0 auto 16px auto;
       max-width: 560px !important;
+    }
+
+    .profile-photo {
+      padding-bottom: 30px;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
     }
   }
 }
