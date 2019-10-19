@@ -12,8 +12,16 @@
 
     .home-title {
       height: 100vh;
-      padding-top: 30%;
+      padding-top: 60%;
       width: 100%;
+
+      @media screen and (min-width: 40em) {
+        padding-top: 40%;
+      }
+
+      @media screen and (min-width: 64em) {
+        padding-top: 30%;
+      }
 
       span {
         color: $white;
@@ -30,7 +38,7 @@
       h1 {
         color: $white;
         font-family: 'ratio', sans-serif !important;
-        font-size: 48px;
+        font-size: 36px;
         font-style: normal !important;
         font-weight: 700 !important;
         line-height: 1;
@@ -44,6 +52,7 @@
   }
 
   .hero-image {
+    background-image: url('/assets/images/home-hero-small.jpg'), url('/assets/images/home-hero-small-thumbnail.jpg');
     background-position: center bottom;
     background-size: cover;
     bottom: 0;
@@ -52,6 +61,10 @@
     right: 0;
     top: 0;
     transform: translateZ(-1px) scale(2);
+
+    @media screen and (min-width: 40em) {
+      background-image: url('/assets/images/home-hero.jpg'), url('/assets/images/home-hero-thumbnail.jpg');
+    }
 
     &:after {
       background-color: rgba(0, 0, 0, 0.5);
@@ -67,9 +80,9 @@
 
 .main-content {
   background-color: $white;
+  padding-bottom: 60px;
   padding-top: 30px;
   position: relative;
-  height: 500px;
 
   .grid-container {
     position: relative;
@@ -92,6 +105,45 @@
         border-radius: 50%;
         height: 200px;
         width: 200px;
+      }
+    }
+
+    .gallery {
+      padding-top: 20px;
+
+      .gallery-image {
+        height: 200px;
+        overflow: hidden;
+
+        button {
+          background-position: center center;
+          background-size: cover;
+          cursor: pointer;
+          height: 200px;
+          position: relative;
+          transition: transform 500ms;
+          width: 100%;
+
+          &:after {
+            background-color: rgba(0, 0, 0, 0.1);
+            content: '';
+            height: 100%;
+            left: 0;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            transition: opacity 500ms;
+            width: 100%;
+          }
+
+          &:hover {
+            transform: scale(1.1);
+
+            &:after {
+              opacity: 0;
+            }
+          }
+        }
       }
     }
   }
