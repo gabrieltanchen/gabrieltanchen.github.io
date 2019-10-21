@@ -1,0 +1,18 @@
+.footer {
+  background-color: $gt-primary-color;
+  padding: 15px 0;
+  width: 100%;
+
+  .cell {
+    text-align: center;
+
+    a {
+      color: $white;
+      margin: 0 10px;
+
+      &:hover {
+        color: $gt-hover-secondary-color;
+      }
+    }
+  }
+}
